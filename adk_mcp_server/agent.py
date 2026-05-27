@@ -28,7 +28,7 @@ from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset, \
 load_dotenv()
 
 # IMPORTANT: Replace this with the ABSOLUTE path to your adk_server.py script
-PATH_TO_YOUR_MCP_SERVER_SCRIPT = "/path/to/your/adk_server.py"
+PATH_TO_YOUR_MCP_SERVER_SCRIPT = "/home/student_02_335d9e879b37/adk_mcp_tools/adk_mcp_server/adk_server.py"
 
 # Retry options help avoid the occasional error from popular models
 # receiving too many requests at once.
@@ -53,6 +53,18 @@ root_agent = LlmAgent(
      """,
     # tools: functions to enhance the model's capabilities.
     # Add the MCPToolset below:
+    tools=[
+    MCPToolset(
+    connection_params=StdioConnectionParams(
+        server_params=StdioServerParameters(
+            command="python3", # Command to run your MCP server script
+            args=[PATH_TO_YOUR_MCP_SERVER_SCRIPT], # Argument is the path to the script
+        ),
+        timeout=60,
+        ),
+        tool_filter=['load_web_page'] # Optional: ensure only specific tools are loaded
+    )
+],
 
 )
 
