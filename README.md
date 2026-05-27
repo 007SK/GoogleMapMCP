@@ -46,7 +46,7 @@ The agent can call multiple tools within a single query, chain the
 results together, and reason across them to give a complete answer —
 something a standard Maps search cannot do.
 
-![Agent tool graph](screenshot_of_agent_graph.png) 
+![Agent tool graph](images/GoogleMapMCPTools.png) 
 
 ---
 
