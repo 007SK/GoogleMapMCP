@@ -158,5 +158,5 @@ concept gets significantly shorter.
 
 ## Related post
 
-[LinkedIn post about this project](#) — what I built, what I learned, 
+[LinkedIn post about this project](https://www.linkedin.com/posts/007sk_i-wanted-to-answer-one-question-whats-the-ugcPost-7465368725307822080-MjRR/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACWq99EBOK4merjE7Me8UTP41JSokBgHiVU) — what I built, what I learned, 
 and what it means for how PMs think about AI tooling.
